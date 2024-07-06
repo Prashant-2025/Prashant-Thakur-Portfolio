@@ -1,0 +1,382 @@
+body{
+    margin: 0;
+}
+.header{
+    background-color: black;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    color: aliceblue;
+    text-align: center;
+    padding: 0 15px;
+    z-index: 997;
+}
+.flex-column{
+    flex-direction: column;
+}
+.header .profile-img img{
+    margin: 15px auto;
+    display: block;
+    width: 130px;
+    height: 130px;
+    border: 8px solid rgb(63, 63, 63);
+}
+.rounded-img{
+    border-radius: 50%;
+}
+.header .social-links a{
+    font-size: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    background-color: rgb(63, 63, 63);
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 50%;
+    margin: 20px 10px;
+    transition: 0.3s;
+    background: #ffffff, transparent 90%;
+}
+.header .social-links a:hover{
+    background-color: #149ddd;
+}
+.navmenu{
+    padding: 0;
+    z-index: 9997;
+}
+.navmenu ul{
+    list-style: none;
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+.navmenu a{
+    color: #a8a9b4;
+    padding: 15px 15px;
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: 100%;
+}
+.navmenu a{
+    text-decoration: none;
+}
+.navmenu a:hover, .navmenu .active{
+    color: #ffffff;
+}
+.navmenu a:hover .navicon, .navmenu .active .navicon, .navmenu .active:focus .navicon{
+    color: #149ddd;
+}
+.navmenu a .navicon{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.main{
+    margin-left: 20%;
+}
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: #000000;
+  background-color: #f4fafd;
+  padding: 60px 0;
+  overflow: clip;
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  left: 0;
+  bottom: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+.background-light {
+    background-color: #e2f0fc !important;
+}
+/*--------------------------------------------------------------
+# Home Section
+--------------------------------------------------------------*/
+.homepage{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+
+}
+.homepage img{
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+img{
+    vertical-align: middle;
+}
+.homepage .container{
+    z-index: 3;
+    position: relative;
+    margin-bottom: 50px;
+}
+.homepage h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+}
+.homepage p{
+    font-size: 30px;
+    font-weight: 500;
+}
+.homepage p span{
+    letter-spacing: 1px;
+    border-bottom: 2px solid #149ddd;
+}
+/*--------------------------------------------------------------
+# About Section 
+--------------------------------------------------------------*/
+.about .content ul{
+    list-style: none;
+    padding: 0;
+}
+.about .content ul li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.about .content ul i{
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+}
+
+/*--------------------------------------------------------------
+# Skills Section 
+--------------------------------------------------------------*/
+.skills .progress{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill{
+    color: #050d18;
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+.skills .progress .skill .val{
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-wrap {
+    background: color-mix(in srgb, #272829, transparent 90%);
+    height: 10px;
+  }
+.skills .progress-bar{
+    height: 10px;
+    transition: 0.9s;
+    background-color: #149ddd;
+}
+
+/*--------------------------------------------------------------
+# Resume Section 
+--------------------------------------------------------------*/
+.resume .resume-title {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #149ddd;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: color-mix(in srgb, #272829, transparent 20%);
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #ffffff;
+    border: 2px solid #149ddd;
+  }
+/*--------------------------------------------------------------
+# Portfolio Section 
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Contact Section 
+--------------------------------------------------------------*/
+.contact .info-wrap {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  @media (max-width: 575px) {
+    .contact .info-wrap {
+      padding: 20px;
+    }
+  }
+  
+  .contact .info-item {
+    margin-bottom: 40px;
+  }
+  
+  .contact .info-item i {
+    font-size: 20px;
+    color: #149ddd;
+    background: color-mix(in srgb, #149ddd, transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+  }
+  
+  .contact .info-item h3 {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .contact .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  
+  .contact .info-item:hover i {
+    background: #149ddd;
+    color: #ffffff;
+  }
+  
+  .contact .email-form {
+    background-color: #ffffff;
+    height: 100%;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 575px) {
+    .contact .email-form {
+      padding: 20px;
+    }
+  }
+  
+  .contact .email-form input[type=text],
+  .contact .email-form input[type=email],
+  .contact .email-form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: #272829;
+    background-color: #ffffff;
+    border-color: color-mix(in srgb, #272829, transparent 80%);
+  }
+  
+  .contact .email-form input[type=text]:focus,
+  .contact .email-form input[type=email]:focus,
+  .contact .email-form textarea:focus {
+    border-color: #149ddd;
+  }
+  
+  .contact .email-form input[type=text]::placeholder,
+  .contact .email-form input[type=email]::placeholder,
+  .contact .email-form textarea::placeholder {
+    color: color-mix(in srgb, #272829, transparent 70%);
+  }
+  
+  .contact .email-form button[type=submit] {
+    color: #ffffff;
+    background: #149ddd;
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  .contact .email-form button[type=submit]:hover {
+    background: color-mix(in srgb, #149ddd, transparent 25%);
+  }
