@@ -3,7 +3,7 @@ body{
 }
 .header{
     background-color: black;
-    width: 20%;
+    width: 300px;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ body{
 }
 @media (min-width: 1200px) {
     .header~main {
-      margin-left: 20%;
+      margin-left: 300px;
     }
 }
 
