@@ -49,6 +49,10 @@ body{
     .header~main {
       margin-left: 300px;
     }
+    .contact iframe{
+        width: 400px; 
+        height: 300px;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -61,7 +65,10 @@ body{
     width: 115px;
     height: 115px;
     border: 8px solid rgb(63, 63, 63);
-}
+ }
+ .contact iframe{
+    width: 275px;
+ }
 }
 
 .header.header-show {
