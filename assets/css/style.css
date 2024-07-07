@@ -12,6 +12,7 @@ body{
     text-align: center;
     padding: 0 15px;
     z-index: 997;
+    overflow-y: auto;
 }
 .flex-column{
     flex-direction: column;
@@ -43,6 +44,50 @@ body{
 }
 .header .social-links a:hover{
     background-color: #149ddd;
+}
+@media (min-width: 1200px) {
+    .header~main {
+      margin-left: 20%;
+    }
+}
+
+@media (max-width: 1199px) {
+  .header {
+    left: -100%;
+  }
+  .header .profile-img img{
+    margin: 15px auto;
+    display: block;
+    width: 115px;
+    height: 115px;
+    border: 8px solid rgb(63, 63, 63);
+}
+}
+
+.header.header-show {
+  left: 0;
+}
+.header .header-toggle {
+    color: #ffffff;
+    background-color: #149ddd;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    transition: background-color 0.3s;
+}
+
+.header .header-toggle:hover {
+  color: #ffffff;
+  background-color: color-mix(in srgb, #149ddd 90%, white 15%);
 }
 .navmenu{
     padding: 0;
@@ -78,9 +123,7 @@ body{
     font-size: 20px;
     margin-right: 10px;
 }
-.main{
-    margin-left: 20%;
-}
+
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
